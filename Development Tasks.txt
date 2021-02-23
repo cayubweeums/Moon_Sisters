@@ -1,5 +1,8 @@
 Trey:
-
+- AudioSource 
+- Trails and Particle effects
+- Platforming Game Mechanics
+- 
 Mitchell:
 	Camera Movement
 	Tilemap Platforms
