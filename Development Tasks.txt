@@ -1,5 +1,8 @@
 Trey:
-
+- AudioSource 
+- Trails and Particle effects
+- 
+- 
 Mitchell:
 
 Caleb:
