@@ -10,3 +10,8 @@ Mitchell:
 	Loading Scenes, Start menu
 
 Caleb:
+- Dialog
+- Custom Fonts in GUI
+- Animate Sprites
+- 3D parallax background
+- Explain the user inputs
