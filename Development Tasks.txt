@@ -1,5 +1,9 @@
 Trey:
 
 Mitchell:
+	Camera Movement
+	Tilemap Platforms
+	Triggers for world interaction
+	Loading Scenes, Start menu
 
 Caleb:
