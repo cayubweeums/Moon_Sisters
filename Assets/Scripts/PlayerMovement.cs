@@ -10,6 +10,10 @@ public class PlayerMovement : MonoBehaviour
     private float vertical;
     private float moveLimiter = 0.7f;
     public float runSpeed = 0.1f;
+    public float jumpForce = 350;
+    private bool jumping = false;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +25,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown("space") && !jumping)
+        {
+            rb2d.AddForce(new Vector2(0, jumpForce));
+            jumping = true;
+        }
+
     }
 
     private void FixedUpdate()
@@ -30,5 +41,10 @@ public class PlayerMovement : MonoBehaviour
             horizontal *= moveLimiter;
         }
         rb2d.velocity = new Vector2(horizontal * runSpeed, rb2d.velocity.y);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        jumping = false;
     }
 }
