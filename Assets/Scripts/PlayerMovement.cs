@@ -91,6 +91,9 @@ public class PlayerMovement : MonoBehaviour
         }else if(_Velocity < 0){
             _Velocity += _Deceleration;
         }
+        if(_Velocity < 0.001 && _Velocity > -0.001){
+            _Velocity = 0;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
