@@ -22,23 +22,49 @@ public class PlayerMovement : MonoBehaviour
     public float _MaxAcc = 1.0f;      
     public float _MinAcc = -1.0f;
     public float _Deceleration = 2f;
+    private Animator anim;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
+        UpdateAnimation();
+ 
+
         if (Input.GetKeyDown("space") && !jumping)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
             rb2d.AddForce(new Vector2(0, jumpForce));
             jumping = true;
+        }
+    }
+
+    void UpdateAnimation()
+    {
+        if (horizontal != 0 || vertical != 0)
+        {
+            anim.SetFloat("moveX", horizontal);
+            anim.SetFloat("moveY", vertical);
+            if (!jumping)
+            {
+                anim.SetBool("running", true);
+            }
+            else
+            {
+                anim.SetBool("running", false);
+            }
+        }
+        else
+        {
+            anim.SetBool("running", false);
         }
     }
 
