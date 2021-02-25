@@ -7741,6 +7741,7 @@ GameObject:
   - component: {fileID: 946510987}
   - component: {fileID: 946510986}
   - component: {fileID: 946510985}
+  - component: {fileID: 946510988}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -8230,6 +8231,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &946510988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946510983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734c1c7b826435040af27bb16be158fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1158235199
 GameObject:
   m_ObjectHideFlags: 0
