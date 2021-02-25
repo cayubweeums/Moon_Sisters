@@ -3655,11 +3655,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 589128522}
   jumpForce: 350
-  jumpLimit: 2
+  jumpLimit: 1
   _Velocity: 0
   _MaxVelocity: 5
   _Acc: 0
-  _AccSpeed: 0.1
+  _AccSpeed: 0.2
   _MaxAcc: 1.5
   _MinAcc: -1.5
   _Deceleration: 0.3
@@ -4189,11 +4189,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 874171094}
   jumpForce: 350
-  jumpLimit: 2
+  jumpLimit: 1
   _Velocity: 0
   _MaxVelocity: 5
   _Acc: 0
-  _AccSpeed: 0.1
+  _AccSpeed: 0.2
   _MaxAcc: 1.5
   _MinAcc: -1.5
   _Deceleration: 0.3
@@ -4221,10 +4221,10 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874171091}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

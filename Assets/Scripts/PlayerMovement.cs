@@ -36,11 +36,8 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown("space") && !jumping)
         {
-            jumpLimit -= 1;
             rb2d.AddForce(new Vector2(0, jumpForce));
-            if(jumpLimit == 0){
-                jumping = true;
-            }
+            jumping = true;
         }
     }
 

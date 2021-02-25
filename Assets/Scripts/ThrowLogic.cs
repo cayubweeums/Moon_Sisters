@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThrowLogic : MonoBehaviour
 {
 
-    public GameObject validPickup, triggerPickup, triggerMain;
+    public GameObject validPickup;
 
     private GameObject sister;
     private Rigidbody2D rb2d;
