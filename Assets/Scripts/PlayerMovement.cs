@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     private float horizontal;
     private float vertical;
-    //private float moveLimiter = 0.7f;
+
     public float jumpForce = 350;
     private bool jumping = false;
     private bool faceRight = true;
@@ -44,20 +44,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        /*
-        if (horizontal != 0)
-        {
-            horizontal *= moveLimiter;
-        }
-        rb2d.velocity = new Vector2(horizontal * runSpeed, rb2d.velocity.y);
-        */  
         if (horizontal < 0){
+            if(faceRight){
+                flip();
+            }
             _Acc = 0;
             _Acc -= _AccSpeed;
             acceleration();
         } 
 
         else if (horizontal > 0){
+            if(!faceRight){
+                flip();
+            }
             _Acc = 0;
             _Acc += _AccSpeed;
             acceleration();
@@ -107,5 +106,4 @@ public class PlayerMovement : MonoBehaviour
         scaler.x *= -1;
         transform.localScale = scaler;
     }
-
 }
