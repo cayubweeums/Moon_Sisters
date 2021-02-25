@@ -19453,7 +19453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 589128521}
   boundaryPercent: 0.2
-  easing: 0.01
+  easing: 0.1
 --- !u!81 &559332344
 AudioListener:
   m_ObjectHideFlags: 0
@@ -19489,7 +19489,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.315187
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
