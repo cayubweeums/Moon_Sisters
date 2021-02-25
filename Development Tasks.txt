@@ -12,9 +12,9 @@ Mitchell:
 Caleb:
 - Dialog(Done)
 - Custom Fonts in GUI(Done)
-- Animate Sprites
+- Animate Sprites(Done)
 - 3D parallax background
-- Explain the user inputs
+- Explain the user inputs(Done)
 - - Left click switch control of sisters
 - - "E" to pick up sisters when colliding
 
