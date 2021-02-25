@@ -16,8 +16,10 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
     public GameObject events;
 
-
-
+    public static GameManager Instance
+    {
+        get; private set;
+    }
 
     void Start()
     {
@@ -47,10 +49,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static GameManager Instance
-    {
-        get; private set;
-    }
+
 
     public void StartButton()
     {
@@ -106,13 +105,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TypeText(string text)
     {
-        dialogText.GetComponent<TextMeshProUGUI>().text = "";
-        foreach (char c in text.ToCharArray())
-        {
-            dialogText.GetComponent<TextMeshProUGUI>().text += c;
-            yield return new WaitForSeconds(0.01f);
-
-        }
+        dialogText.GetComponent<TextMeshProUGUI>().text = text;
+        yield return new WaitForSeconds(0.01f);
     }
 
     public void GameOver()

@@ -24,7 +24,6 @@ public class Sign : MonoBehaviour
         if(collision .gameObject .CompareTag("Player"))
         {
             GameManager.Instance.StartDialog(myText);
-
         }
     }
 
@@ -33,7 +32,6 @@ public class Sign : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.HideDialog();
-
         }
     }
 }

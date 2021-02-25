@@ -15,3 +15,8 @@ Caleb:
 - Animate Sprites
 - 3D parallax background
 - Explain the user inputs
+- - Left click switch control of sisters
+- - "E" to pick up sisters when colliding
+
+Misc:
+- Have camera follow current character
