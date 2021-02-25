@@ -12,10 +12,9 @@ public class ChangeSisters : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sister1.gameObject.GetComponent< PlayerMovement >().enabled = true;
         sister2.gameObject.GetComponent< PlayerMovement >().enabled = false;
-        sister1.gameObject.GetComponent< ThrowLogic >().enabled = true;
         sister2.gameObject.GetComponent< ThrowLogic >().enabled = false;
+        sister2.gameObject.GetComponent< SisterRetrieval >().enabled = false;
     }
 
     // Update is called once per frame
@@ -33,12 +32,16 @@ public class ChangeSisters : MonoBehaviour
             sister2.gameObject.GetComponent< PlayerMovement >().enabled = true;
             sister1.gameObject.GetComponent< ThrowLogic >().enabled = false;
             sister2.gameObject.GetComponent< ThrowLogic >().enabled = true;
+            sister1.gameObject.GetComponent< SisterRetrieval >().enabled = false;
+            sister2.gameObject.GetComponent< SisterRetrieval >().enabled = true;
             sister1Playing = !sister1Playing;
         }else{
             sister1.gameObject.GetComponent< PlayerMovement >().enabled = true;
             sister2.gameObject.GetComponent< PlayerMovement >().enabled = false;
             sister1.gameObject.GetComponent< ThrowLogic >().enabled = true;
             sister2.gameObject.GetComponent< ThrowLogic >().enabled = false;
+            sister1.gameObject.GetComponent< SisterRetrieval >().enabled = true;
+            sister2.gameObject.GetComponent< SisterRetrieval >().enabled = false;
             sister1Playing = !sister1Playing;
         }
     }

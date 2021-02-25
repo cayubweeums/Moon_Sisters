@@ -6,7 +6,6 @@ public class ThrowLogic : MonoBehaviour
 {
 
     public GameObject validPickup;
-
     private GameObject sister;
     private Rigidbody2D rb2d;
 
@@ -30,10 +29,12 @@ public class ThrowLogic : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         if(Input.GetKeyDown(KeyCode.E) && pickupAllowed){
             toggle = true;
+            Debug.Log("Can Pick up");
         }
 
         if(Input.GetKeyDown(KeyCode.E) && holdingSister){
             toggle = false;
+            Debug.Log("Can throw");
         }
         
         if(pickupAllowed && toggle){
@@ -44,7 +45,7 @@ public class ThrowLogic : MonoBehaviour
             throwSister();
         }
     }
-
+/*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject == validPickup){
@@ -59,13 +60,19 @@ public class ThrowLogic : MonoBehaviour
             Debug.Log("Not allowed to pickup anymore");
         }
     }
-
-    private void OnTriggerEnter(Collider collision){
-        Debug.Log("collision");
+*/
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.gameObject == validPickup){
+            pickupAllowed = true;
+            Debug.Log("Allowed to pickup");
+        }
     }
 
-    private void OnTriggerExit(Collider collision){
-        Debug.Log("collision");
+    private void OnTriggerExit2D(Collider2D collision){
+        if(collision.gameObject == validPickup){
+            pickupAllowed = false;
+            Debug.Log("Not allowed to pickup anymore");
+        }
     }
 
     private void throwSister(){
@@ -74,7 +81,7 @@ public class ThrowLogic : MonoBehaviour
     }
 
     private void pickup(){
-        validPickup.transform.localPosition = new Vector2(sister.transform.position.x+2,sister.transform.position.y+2);
+        validPickup.transform.localPosition = new Vector2(sister.transform.position.x+2,sister.transform.position.y+2.25f);
         holdingSister = true;
     }
 }
