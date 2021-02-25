@@ -115,4 +115,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void GameOver()
+    {
+        startButton.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(ColorLerp(new Color(1, 1, 1, 1), 1f));
+    }
+
 }

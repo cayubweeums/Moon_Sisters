@@ -23,8 +23,22 @@ public class Exits : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(LoadYourAsyncScene(toTravel));
+            if (gameObject.CompareTag("Finish"))
+            {
+                StartCoroutine(EndGame());
+            }
+            else
+            {
+                StartCoroutine(LoadYourAsyncScene(toTravel));
+            }
         }
+    }
+
+    IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(toTravel, LoadSceneMode.Single);
+        GameManager.Instance.GameOver();
     }
 
     IEnumerator LoadYourAsyncScene(string scene)
