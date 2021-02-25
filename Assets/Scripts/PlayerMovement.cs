@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 350;
     private bool jumping = false;
     private bool faceRight = true;
-    public float jumpLimit = 2;
+    public float jumpLimit = 1;
     private bool isLowGrav = false;
  
     public float _Velocity = 0.0f;      
@@ -107,7 +107,4 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = scaler;
     }
 
-    private void pickup(){
-        
-    }
 }
