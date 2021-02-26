@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float vertical;
     
     public AudioClip jump;
-    private AudioSource audio;
+    private AudioSource audioData;
 
     public float jumpForce = 350;
     private bool jumping = false;
@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        audio = GetComponent<AudioSource>();
+        audioData = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -52,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) && !jumping){
-            audio.Play();
+            audioData.Play();
         }else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || jumping){
-            audio.Stop();
+            audioData.Stop();
         }
     }
 
@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (horizontal < 0){
             if(faceRight){
-                //flip();
+                flip();
             }
             _Acc = 0;
             _Acc -= _AccSpeed;
@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
         else if (horizontal > 0){
             if(!faceRight){
-                //flip();
+                flip();
             }
             _Acc = 0;
             _Acc += _AccSpeed;
@@ -136,12 +136,11 @@ public class PlayerMovement : MonoBehaviour
     {
         jumping = false;
     }
-/*
+
     private void flip(){
         faceRight = !faceRight;
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
         transform.localScale = scaler;
     }
-    */
 }
