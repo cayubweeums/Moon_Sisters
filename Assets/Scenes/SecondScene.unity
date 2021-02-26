@@ -7372,7 +7372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801193389
 GameObject:
@@ -8251,6 +8251,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734c1c7b826435040af27bb16be158fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1127125645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3433820117986617698, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: myText
+      value: Try to thow one sister, and use her to pull the other. You will have
+        to quickly switch between the two.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617699, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_Name
+      value: crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.4968395
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.413058
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433820117986617703, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5815be8e7a831f4ea22bc8fee6a501e, type: 3}
 --- !u!1 &1250476015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8297,7 +8359,7 @@ Transform:
   - {fileID: 473887138}
   - {fileID: 298686549}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360300009
 GameObject:
@@ -8420,7 +8482,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428717071
 GameObject:
@@ -9444,7 +9506,7 @@ Transform:
   - {fileID: 1428717072}
   - {fileID: 2065894554}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1595571542
 GameObject:
