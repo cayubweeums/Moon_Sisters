@@ -18,13 +18,13 @@ public class SisterRetrieval : MonoBehaviour
     {
         if(Input.GetMouseButton(1)){
             sisterToRetrieve.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-            sisterToRetrieve.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            sisterToRetrieve.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             xDiff = (sisterWaiting.transform.position.x - sisterToRetrieve.transform.position.x)/1.5f;
             yDiff = (sisterWaiting.transform.position.y - sisterToRetrieve.transform.position.y)/1.5f;
             sisterToRetrieve.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(xDiff,yDiff);
         }else{
             sisterToRetrieve.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-            sisterToRetrieve.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            sisterToRetrieve.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
         }
         
     }

@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (horizontal < 0){
             if(faceRight){
-                flip();
+                //flip();
             }
             _Acc = 0;
             _Acc -= _AccSpeed;
@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
         else if (horizontal > 0){
             if(!faceRight){
-                flip();
+                //flip();
             }
             _Acc = 0;
             _Acc += _AccSpeed;
@@ -125,11 +125,12 @@ public class PlayerMovement : MonoBehaviour
     {
         jumping = false;
     }
-
+/*
     private void flip(){
         faceRight = !faceRight;
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
         transform.localScale = scaler;
     }
+    */
 }
