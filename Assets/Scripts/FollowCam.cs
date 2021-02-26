@@ -55,4 +55,8 @@ public class FollowCam : MonoBehaviour
             transform.position = pos;*/
         }
     }
+    /*public void ChangeCam(GameObject player)
+    {
+        transform.position = Vector3.Lerp(transform.position, player.transform.position, easing) + new Vector3(0, 0, -10f);
+    }*/
 }

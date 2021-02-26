@@ -6,6 +6,7 @@ public class ChangeSisters : MonoBehaviour
 {
 
     public GameObject sister1, sister2;
+    public FollowCam Cam;
 
     private bool sister1Playing = true;
     
@@ -35,6 +36,7 @@ public class ChangeSisters : MonoBehaviour
             sister1.gameObject.GetComponent< SisterRetrieval >().enabled = false;
             sister2.gameObject.GetComponent< SisterRetrieval >().enabled = true;
             sister1Playing = !sister1Playing;
+            Cam.player = sister2;
         }else{
             sister1.gameObject.GetComponent< PlayerMovement >().enabled = true;
             sister2.gameObject.GetComponent< PlayerMovement >().enabled = false;
@@ -43,6 +45,7 @@ public class ChangeSisters : MonoBehaviour
             sister1.gameObject.GetComponent< SisterRetrieval >().enabled = true;
             sister2.gameObject.GetComponent< SisterRetrieval >().enabled = false;
             sister1Playing = !sister1Playing;
+            Cam.player = sister1;
         }
     }
     

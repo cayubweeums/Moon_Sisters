@@ -116,4 +116,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ColorLerp(new Color(1, 1, 1, 1), 1f));
     }
 
+    
+
 }
