@@ -633,6 +633,7 @@ MonoBehaviour:
   StartBackground: {fileID: 144601761}
   canvas: {fileID: 516573629}
   events: {fileID: 624089987}
+  easing: 0.1
 --- !u!4 &1440993764
 Transform:
   m_ObjectHideFlags: 0
