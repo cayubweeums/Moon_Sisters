@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
             rb2d.AddForce(new Vector2(0, jumpForce));
-            AudioSource.PlayClipAtPoint(jump,transform.position);
+            AudioSource.PlayClipAtPoint(jump,transform.position, 1);
             jumping = true;
         }
 
