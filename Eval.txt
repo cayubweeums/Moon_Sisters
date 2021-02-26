@@ -1,0 +1,20 @@
+The intent was to create a game in which two sisters are going through different worlds. Their only goal is to reach the end of the world. The sisters are able to join with each other, 
+and can throw one another. Being able to throw one another is almost essential to traversing the terrain. Each world seems to have a theme, but there are odd platforms leading the sisters
+to the end of their current world. 
+
+Mechanics:
+    Arrow key - left and right
+    Space - jump
+    E - Pickup/Throw sister
+    Left-Click(mouse) - switch sisters
+
+    IF you read this before the game, you must situate the sisters in such a way so that you can quickly switch between them and use one of them to grab onto the other.
+
+Mitchell: 
+    While writing this game I enjoyed being able to divided the work up. It made it alot more managable for me. This was also a struggle, becuase it was difficult to get everything working at
+    the same time for everyone. This wasnt too bad, we just had to do a lot of fixing. I also enjoyed seing how the different parts from different people came together. It was cool to see different 
+    components finally come together to look like a playable game.  One struggle was trying to create levels for a game that i didnt have a full understanding of the game mechanics for, but 
+    it worked out okay in the end. 
+
+Attributions:
+    Majority of textures: http://adamatomic.com/abandonauts/
