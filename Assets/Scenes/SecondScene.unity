@@ -6866,7 +6866,6 @@ GameObject:
   - component: {fileID: 311704151}
   - component: {fileID: 311704150}
   - component: {fileID: 311704149}
-  - component: {fileID: 311704157}
   - component: {fileID: 311704153}
   m_Layer: 0
   m_Name: Sister1
@@ -7936,7 +7935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3457530b7509594eba5fadd24666295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sisterToRetrieve: {fileID: 1568111771}
+  sisterToRetrieve: {fileID: 0}
 --- !u!95 &1012886467
 Animator:
   serializedVersion: 3
@@ -7984,7 +7983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe19493a2fa2c846bea6fa43be2c8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validPickup: {fileID: 1568111771}
+  validPickup: {fileID: 0}
   throwPowerx: 5
   throwPowery: 10
 --- !u!114 &1012886470
@@ -8091,8 +8090,7 @@ Transform:
   m_LocalRotation: {x: 0.01745245, y: 0.0000009150491, z: -0.000052422998, w: 0.99984777}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1.1541483, y: 1.1070819, z: 1}
-  m_Children:
-  - {fileID: 323194901}
+  m_Children: []
   m_Father: {fileID: 1794066192}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 2, y: 0, z: -0.006}
@@ -8158,7 +8156,6 @@ GameObject:
   - component: {fileID: 1210940948}
   - component: {fileID: 1210940947}
   - component: {fileID: 1210940946}
-  - component: {fileID: 1210940954}
   - component: {fileID: 1210940950}
   m_Layer: 0
   m_Name: Sister2
@@ -9415,7 +9412,7 @@ Transform:
   m_GameObject: {fileID: 1579540786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1595571543}
   - {fileID: 1428717072}
@@ -9718,7 +9715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sister1: {fileID: 1012886464}
-  sister2: {fileID: 1568111771}
+  sister2: {fileID: 0}
 --- !u!4 &1794066192
 Transform:
   m_ObjectHideFlags: 0
@@ -9731,7 +9728,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1012886473}
-  - {fileID: 1568111780}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12333,7 +12329,7 @@ RectTransform:
   m_Children:
   - {fileID: 1300126916}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
