@@ -16,7 +16,8 @@ public class ThrowLogic : MonoBehaviour
     public float throwPowery = 5;
     private bool toggle = false;
 
-    // Start is called before the first frame update
+    public float fix;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -45,22 +46,7 @@ public class ThrowLogic : MonoBehaviour
             throwSister();
         }
     }
-/*
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject == validPickup){
-            pickupAllowed = true;
-            Debug.Log("Allowed to pickup");
-        }
-    }
 
-    private void OnCollisionExit2D(Collision2D collision){
-        if(collision.gameObject == validPickup){
-            pickupAllowed = false;
-            Debug.Log("Not allowed to pickup anymore");
-        }
-    }
-*/
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject == validPickup){
             pickupAllowed = true;
@@ -81,7 +67,7 @@ public class ThrowLogic : MonoBehaviour
     }
 
     private void pickup(){
-        validPickup.transform.localPosition = new Vector2(sister.transform.position.x+2,sister.transform.position.y+2.25f);
+        validPickup.transform.localPosition = new Vector2(sister.transform.position.x+fix,sister.transform.position.y+2.25f);
         holdingSister = true;
     }
 }

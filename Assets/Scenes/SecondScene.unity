@@ -6883,7 +6883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8987e6381e6a225499e82e3dafaa1a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1746663723}
   boundaryPercent: 0.2
   easing: 0.1
 --- !u!81 &559332344
@@ -7058,7 +7058,7 @@ GameObject:
   - component: {fileID: 690850953}
   - component: {fileID: 690850952}
   m_Layer: 0
-  m_Name: Player (2)
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7078,7 +7078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sister1: {fileID: 1746663723}
   sister2: {fileID: 1792654442}
-  Cam: {fileID: 0}
+  Cam: {fileID: 559332343}
 --- !u!4 &690850953
 Transform:
   m_ObjectHideFlags: 0
@@ -9462,7 +9462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validPickup: {fileID: 1792654442}
   throwPowerx: 5
-  throwPowery: 10
+  throwPowery: 8
+  fix: 2
 --- !u!114 &1746663730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9772,7 +9773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validPickup: {fileID: 1746663723}
   throwPowerx: 5
-  throwPowery: 10
+  throwPowery: 8
+  fix: 2
 --- !u!114 &1792654449
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5112,7 +5112,7 @@ GameObject:
   - component: {fileID: 1344033819}
   - component: {fileID: 1344033818}
   m_Layer: 0
-  m_Name: Player (1)
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5299,7 +5299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validPickup: {fileID: 1943994000}
   throwPowerx: 5
-  throwPowery: 10
+  throwPowery: 8
+  fix: 2
 --- !u!114 &1524185251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7615,7 +7616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validPickup: {fileID: 1524185245}
   throwPowerx: 5
-  throwPowery: 10
+  throwPowery: 8
+  fix: 2
 --- !u!114 &1943994006
 MonoBehaviour:
   m_ObjectHideFlags: 0
