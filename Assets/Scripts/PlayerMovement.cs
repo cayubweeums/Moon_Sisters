@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     private float horizontal;
     private float vertical;
+    
+    public AudioClip jump;
+    private AudioSource audio;
 
     public float jumpForce = 350;
     private bool jumping = false;
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,7 +47,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
             rb2d.AddForce(new Vector2(0, jumpForce));
+            AudioSource.PlayClipAtPoint(jump,transform.position);
             jumping = true;
+        }
+
+        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) && !jumping){
+            audio.Play();
+        }else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || jumping){
+            audio.Stop();
         }
     }
 
